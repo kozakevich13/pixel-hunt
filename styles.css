@@ -1,0 +1,55 @@
+#gameContainer {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.square {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.block-option {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+#gameContainer.easy {
+  width: 600px;
+  height: 400px;
+}
+
+#gameContainer.medium {
+  width: 800px;
+  height: 600px;
+}
+
+#gameContainer.hard {
+  width: 1000px;
+  height: 800px;
+}
+
+.square.easy {
+  width: 60px;
+  height: 60px;
+}
+
+.square.medium {
+  width: 40px;
+  height: 40px;
+}
+
+.square.hard {
+  width: 20px;
+  height: 20px;
+}
+
+.hidden {
+  display: none;
+}
