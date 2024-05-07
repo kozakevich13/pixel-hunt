@@ -13,6 +13,7 @@ function startGame() {
   }
   const color = document.getElementById("colorPicker").value;
   toggleGameControls();
+  toggleGameInfo();
   clearInterval(currentTimer);
   clearInterval(countdown);
   adjustGameArea(difficulty);
@@ -25,6 +26,12 @@ function toggleGameControls() {
   document.getElementById("colorPicker").classList.toggle("hidden");
   document.getElementById("startButton").classList.toggle("hidden");
   document.getElementById("choose-difficulty").classList.toggle("hidden");
+  document.getElementById("choose-color").classList.toggle("hidden");
+}
+
+function toggleGameInfo() {
+  document.getElementById("game-time").classList.toggle("block");
+  document.getElementById("game-score").classList.toggle("block");
 }
 
 function adjustGameArea(difficulty) {
@@ -114,6 +121,7 @@ function addSquare(difficulty, color) {
 
 function gameEnd() {
   toggleGameControls();
+  toggleGameInfo();
   alert(`Game ower! Your score: ${score}. Congratulation!`);
   score = 0;
   scoreDisplay.textContent = score;

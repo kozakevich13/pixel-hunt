@@ -7,8 +7,10 @@
   </head>
   <body>
     <h1>Pixel Hunt</h1>
-    <div>score: <span id="score">0</span></div>
-    <div>time left for click: <span id="timer">0</span></div>
+    <div id="game-score" class="hidden">score: <span id="score">0</span></div>
+    <div id="game-time" class="hidden">
+      time left for click: <span id="timer">0</span>
+    </div>
     <div class="block-option">
       <div id="choose-difficulty">Choose difficulty:</div>
       <select id="difficulty">
@@ -17,6 +19,7 @@
         <option value="medium">Normal</option>
         <option value="hard">Catch me if you can</option>
       </select>
+      <div id="choose-color">Choose color:</div>
       <input type="color" id="colorPicker" />
       <button id="startButton" onclick="startGame()" disabled>Start</button>
     </div>

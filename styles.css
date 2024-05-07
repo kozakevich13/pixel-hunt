@@ -14,6 +14,11 @@
 
 .block-option {
   display: flex;
+  margin-right: 15px;
+}
+
+.block-option > * {
+  margin-right: 5px;
 }
 
 h1 {
@@ -52,4 +57,16 @@ h1 {
 
 .hidden {
   display: none;
+}
+
+.block {
+  display: block;
+}
+
+#choose-difficulty {
+  margin-top: 4px;
+}
+
+#choose-color {
+  margin-top: 4px;
 }
